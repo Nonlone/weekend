@@ -1,4 +1,4 @@
-package cn.xiaocuoben.mapper.addon;
+package tk.mybatis.mapper.weekend;
 
 import java.io.Serializable;
 import java.util.function.Function;

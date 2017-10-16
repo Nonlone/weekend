@@ -1,6 +1,6 @@
-package cn.xiaocuoben.mapper.addon.reflection;
+package tk.mybatis.mapper.weekend.reflection;
 
-import cn.xiaocuoben.mapper.addon.Fn;
+import tk.mybatis.mapper.weekend.Fn;
 
 import java.beans.Introspector;
 import java.lang.invoke.SerializedLambda;

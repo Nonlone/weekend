@@ -1,4 +1,4 @@
-package cn.xiaocuoben.mapper.addon.reflection;
+package tk.mybatis.mapper.weekend.reflection;
 
 /**
  * @author Frank

@@ -1,7 +1,7 @@
-package cn.xiaocuoben.mapper.addon.mapper;
+package tk.mybatis.mapper.weekend.mapper;
 
-import cn.xiaocuoben.mapper.addon.entity.User;
 import tk.mybatis.mapper.common.Mapper;
+import tk.mybatis.mapper.weekend.entity.User;
 
 /**
  * @author Frank

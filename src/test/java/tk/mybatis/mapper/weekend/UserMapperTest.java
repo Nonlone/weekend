@@ -1,9 +1,9 @@
-package cn.xiaocuoben.mapper.addon;
+package tk.mybatis.mapper.weekend;
 
-import cn.xiaocuoben.mapper.addon.entity.User;
-import cn.xiaocuoben.mapper.addon.mapper.UserMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
+import tk.mybatis.mapper.weekend.entity.User;
+import tk.mybatis.mapper.weekend.mapper.UserMapper;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,8 +19,8 @@ public class UserMapperTest {
     @Test
     public void testSelectIdIsNull(){
         SqlSession    sqlSession = MybatisHelper.getSqlSession();
-        UserMapper    userMapper = sqlSession.getMapper(UserMapper.class);
-        Weekend<User> weekend    = Weekend.of(User.class);
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        Weekend<User> weekend = Weekend.of(User.class);
         weekend.weekendCriteria()
                 .andIsNull(User::getId)
                 .andBetween(User::getId,0,10)

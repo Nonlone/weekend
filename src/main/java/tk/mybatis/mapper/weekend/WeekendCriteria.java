@@ -1,8 +1,8 @@
-package cn.xiaocuoben.mapper.addon;
+package tk.mybatis.mapper.weekend;
 
-import cn.xiaocuoben.mapper.addon.reflection.Reflections;
 import tk.mybatis.mapper.entity.EntityColumn;
 import tk.mybatis.mapper.entity.Example.Criteria;
+import tk.mybatis.mapper.weekend.reflection.Reflections;
 
 import java.util.Map;
 

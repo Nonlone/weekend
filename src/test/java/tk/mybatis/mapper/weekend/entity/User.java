@@ -1,4 +1,4 @@
-package cn.xiaocuoben.mapper.addon.entity;
+package tk.mybatis.mapper.weekend.entity;
 
 import javax.persistence.Table;
 

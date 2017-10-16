@@ -61,7 +61,7 @@
     </environments>
 
     <mappers>
-        <mapper class="cn.xiaocuoben.mapper.addon.mapper.UserMapper"/>
+        <mapper class="tk.mybatis.mapper.weekend.mapper.UserMapper"/>
     </mappers>
 
 </configuration>

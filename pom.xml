@@ -29,8 +29,38 @@
     <groupId>tk.mybatis</groupId>
     <artifactId>mapper-weekend</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+
+    <name>mapper-weekend</name>
+    <description>Mybatis通用Mapper扩展 - weekend</description>
+    <url>http://www.mybatis.tk</url>
+
+    <licenses>
+        <license>
+            <name>The MIT License (MIT)</name>
+            <url>https://github.com/abel533//blob/master/LICENSE</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>liuyuyu</name>
+            <email>liuyuyu2333@gmail.com</email>
+        </developer>
+        <developer>
+            <name>abel533</name>
+            <email>abel533@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git@github.com:abel533/weekend.git</connection>
+        <developerConnection>scm:git@github.com:abel533/weekend.git</developerConnection>
+        <url>git@github.com:abel533/weekend.git</url>
+    </scm>
+
     <properties>
         <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mybatis.version>3.3.0</mybatis.version>
         <mapper.version>3.4.3</mapper.version>
         <junit.version>4.12</junit.version>
@@ -123,4 +153,14 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>

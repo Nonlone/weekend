@@ -197,7 +197,7 @@ public class WeekendSqls<T> {
         return this;
     }
 
-    public WeekendSqls<T> orEqualTo(Fn<T, Object> fn, String value) {
+    public WeekendSqls<T> orEqualTo(Fn<T, Object> fn, Object value) {
         return this.orEqualTo(Reflections.fnToFieldName(fn), value);
     }
 
@@ -206,7 +206,7 @@ public class WeekendSqls<T> {
         return this;
     }
 
-    public WeekendSqls<T> orNotEqualTo(Fn<T, Object> fn, String value) {
+    public WeekendSqls<T> orNotEqualTo(Fn<T, Object> fn, Object value) {
         return this.orNotEqualTo(Reflections.fnToFieldName(fn), value);
     }
 
@@ -215,7 +215,7 @@ public class WeekendSqls<T> {
         return this;
     }
 
-    public WeekendSqls<T> orGreaterThan(Fn<T, Object> fn, String value) {
+    public WeekendSqls<T> orGreaterThan(Fn<T, Object> fn, Object value) {
         return this.orGreaterThan(Reflections.fnToFieldName(fn), value);
     }
 
@@ -224,7 +224,7 @@ public class WeekendSqls<T> {
         return this;
     }
 
-    public WeekendSqls<T> orGreaterThanOrEqualTo(Fn<T, Object> fn, String value) {
+    public WeekendSqls<T> orGreaterThanOrEqualTo(Fn<T, Object> fn, Object value) {
         return this.orGreaterThanOrEqualTo(Reflections.fnToFieldName(fn), value);
     }
 
@@ -233,7 +233,7 @@ public class WeekendSqls<T> {
         return this;
     }
 
-    public WeekendSqls<T> orLessThan(Fn<T, Object> fn, String value) {
+    public WeekendSqls<T> orLessThan(Fn<T, Object> fn, Object value) {
         return this.orLessThan(Reflections.fnToFieldName(fn), value);
     }
 
@@ -242,7 +242,7 @@ public class WeekendSqls<T> {
         return this;
     }
 
-    public WeekendSqls<T> orLessThanOrEqualTo(Fn<T, Object> fn, String value) {
+    public WeekendSqls<T> orLessThanOrEqualTo(Fn<T, Object> fn, Object value) {
         return this.orLessThanOrEqualTo(Reflections.fnToFieldName(fn), value);
     }
 
@@ -282,21 +282,21 @@ public class WeekendSqls<T> {
         return this.orNotBetween(Reflections.fnToFieldName(fn), value1, value2);
     }
 
-    public WeekendSqls<T> orLike(String property, String value) {
+    public WeekendSqls<T> orLike(String property, Object value) {
         this.criteria.getCriterions().add(new Criterion(property, value, "like", "or"));
         return this;
     }
 
-    public WeekendSqls<T> orLike(Fn<T, Object> fn, String value) {
+    public WeekendSqls<T> orLike(Fn<T, Object> fn, Object value) {
         return this.orLike(Reflections.fnToFieldName(fn), value);
     }
 
-    public WeekendSqls<T> orNotLike(String property, String value) {
+    public WeekendSqls<T> orNotLike(String property, Object value) {
         this.criteria.getCriterions().add(new Criterion(property, value, "not like", "or"));
         return this;
     }
 
-    public WeekendSqls<T> orNotLike(Fn<T, Object> fn, String value) {
+    public WeekendSqls<T> orNotLike(Fn<T, Object> fn, Object value) {
         return this.orNotLike(Reflections.fnToFieldName(fn), value);
     }
 }
